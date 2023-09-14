@@ -14,11 +14,11 @@ function verificarPosicaoElemento() {
     const logo = document.getElementById('logosvg');
     let posicao = ancoragem.getBoundingClientRect();
     let windowHeight = window.innerHeight;
-    if (posicao.top <= 120) {
+    if (posicao.top <= 180) {
         elemento.classList.add('elemento-no-topo');
         elemento.classList.remove('logo-absolute');
     }
-    if (posicao.top > 120) {
+    if (posicao.top > 180) {
 
         const scrollTop = window.scrollY;
 
@@ -33,9 +33,5 @@ function verificarPosicaoElemento() {
         elemento.classList.add('logo-absolute');
     }
 }
-
-
-
-
 
 window.addEventListener('scroll', verificarPosicaoElemento);

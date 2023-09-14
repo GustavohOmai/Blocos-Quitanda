@@ -10,7 +10,9 @@ body {
 
 :root {
     --bg-01: #000;
+    --bg-02: #D2B467;
     --text-color-01: #fff;
+    --text-color-02: #000;
 }
 
 .bg-01 {
@@ -24,6 +26,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    margin-top: 40px;
 }
 
 .text-white {
@@ -61,6 +64,9 @@ nav ul li a {
 .justify-between {
     justify-content: space-between;
 }
+.justify-center {
+    justify-content: center;
+}
 
 .yellow-underline {
     height: 2px;
@@ -83,7 +89,7 @@ nav ul li a {
 
 .elemento-no-topo {
     position: fixed;
-    top: 15px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -100,3 +106,20 @@ nav ul li a {
     transform: translateX(-50%);
 }
 
+.bg-02{
+    background: var(--bg-02);
+}
+
+.announcement-bar{
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+.text-black{
+    color: var(--text-color-02);
+}
+
+.announcement-bar p{
+    font-size: .8rem;
+}
