@@ -6,6 +6,7 @@
 
 body {
     font-size: 62.5%;
+    font-style: italic;
 }
 
 :root {
@@ -13,6 +14,7 @@ body {
     --bg-02: #D2B467;
     --text-color-01: #fff;
     --text-color-02: #000;
+    --text-color-03: #D2B467;
 }
 
 .bg-01 {
@@ -123,3 +125,74 @@ nav ul li a {
 .announcement-bar p{
     font-size: .8rem;
 }
+
+.fade-in {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-mobile{
+    display: none;
+}
+.menu-desktop{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+    display: block;
+    position: absolute;
+    right: 0px;
+    }
+
+    .nav-mob {
+        margin-top: 2rem;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--text-color-03);
+    transition: 0.25s ease-in-out;
+}
+label span:nth-child(1) {
+    top: 0;
+}
+label span:nth-child(2) {
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  #checkbox-menu:checked + label span:nth-child(2){
+    transform: rotate(45deg);
+    top:8px;
+  }
+  
