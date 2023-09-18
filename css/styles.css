@@ -141,6 +141,7 @@ nav ul li a {
     display: none;
 }
 
+
 .menu-desktop {
     display: block;
 }
@@ -157,6 +158,9 @@ nav ul li a {
 
 .justify-announ{
     justify-content: space-between;
+}
+#imgdesk{
+    display: none;
 }
 
 @media (max-width: 992px) {
@@ -198,7 +202,15 @@ nav ul li a {
         position: absolute;
         bottom: 20%;
     }    
+    #imgmobile{
+        display: none;
+    }
+    #imgdesk{
+        display: block;
+    }
 }
+
+
 
 label {
     cursor: pointer;
@@ -235,6 +247,8 @@ label span:nth-child(2) {
     transform: rotate(45deg);
     top: 8px;
 }
+
+
 
 #nav-mob ul {
     display: flex;

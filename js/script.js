@@ -52,7 +52,6 @@ function hamburguer() {
   let posicao = ancoragem.getBoundingClientRect();
   if (checkbox.checked) {
     menu.classList.remove('d-none-menu-mobile')
-    menu.classList.add('fade-in');
     menumobile.style.marginTop= '-40px';
     disableScroll();
     elemento.classList.add('elemento-no-topo');
