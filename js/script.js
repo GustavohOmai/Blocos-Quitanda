@@ -46,9 +46,9 @@ let menu = document.getElementById('nav-mob')
 
 function hamburguer() {
   if (checkbox.checked) {
-    menu.classList.remove('display-none')
+    menu.classList.remove('d-none')
   } else {
-    menu.classList.add('display-none')
+    menu.classList.add('d-none')
   }
 }
 

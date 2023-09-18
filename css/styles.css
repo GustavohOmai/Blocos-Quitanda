@@ -152,15 +152,19 @@ nav ul li a {
     }
 
     .menu-mobile{
-    display: block;
-    position: absolute;
-    right: 0px;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0rem;
+        background: #000;
     }
 
     .nav-mob {
         margin-top: 2rem;
         margin-right: 3rem;
         margin-bottom: 2rem;
+        display: flex;
+        justify-content: end;
     }
 }
 
@@ -196,3 +200,8 @@ label span:nth-child(2) {
     top:8px;
   }
   
+  #nav-mob ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28rem;
+}
