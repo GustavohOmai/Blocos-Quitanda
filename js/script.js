@@ -8,10 +8,14 @@ const menumobile = document.getElementById('menu-mobile');
 const navmobrepo = document.getElementById('navmobrepo');
 
 window.onload = function () {
+  let posicao = ancoragem.getBoundingClientRect();
+  console.log(posicao);
     logo.style.width = `${sizex}px`;
     logo.style.height = `${sizex}px`;
-    header.style.opacity = '0';
-    announ.style.opacity = '0';
+    if (posicao.top > 180) {
+      header.style.opacity = '0';
+      announ.style.opacity = '0';
+    }
 }
 
 window.addEventListener('scroll', verificarPosicaoElemento);
