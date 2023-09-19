@@ -1,3 +1,5 @@
+// Variáveis
+
 const logo = document.getElementById('logosvg');
 const header = document.getElementById('header');
 const announ = document.getElementById('announcement-bar');
@@ -6,6 +8,15 @@ const elemento = document.getElementById('logo');
 const ancoragem = document.getElementById('ancoragem');
 const menumobile = document.getElementById('menu-mobile');
 const navmobrepo = document.getElementById('navmobrepo');
+const btntab1 = document.getElementById('btntab1');
+const btntab2 = document.getElementById('btntab2');
+const btntab3 = document.getElementById('btntab3');
+const tab1 = document.getElementById('tab1');
+const tab2 = document.getElementById('tab2');
+const tab3 = document.getElementById('tab3');
+
+
+// ONLOAD
 
 window.onload = function () {
   let posicao = ancoragem.getBoundingClientRect();
@@ -17,6 +28,8 @@ window.onload = function () {
       announ.style.opacity = '0';
     }
 }
+
+// HEADER
 
 window.addEventListener('scroll', verificarPosicaoElemento);
 
@@ -35,7 +48,7 @@ function verificarPosicaoElemento() {
         announ.style.opacity = '1';
         const scrollTop = window.scrollY;
 
-        const initialSize = windowHeight / 2.45;
+        const initialSize = windowHeight / 2.4;
         const newSize = initialSize - (scrollTop * 0.4);
         const finalSize = newSize;
 
@@ -98,3 +111,76 @@ function enableScroll() {
   elemento.classList.add('elemento-no-topo');
 }
 // FIM Menu Burguer
+
+// TABS
+
+// Função para mostrar a tab1 e ocultar tab2 e tab3
+function showTab1() {
+  tab1.classList.add('d-flex');
+  tab1.classList.remove('d-none');
+  btntab1.classList.add('fade-in');
+  btntab1.style.opacity= '1';
+  
+  tab2.classList.remove('d-flex');
+  tab2.classList.add('d-none');
+  btntab2.classList.add('fade-in');
+  btntab2.style.opacity= '0.5';
+  
+  tab3.classList.remove('d-flex');
+  tab3.classList.add('d-none');
+  btntab3.classList.add('fade-in');
+  btntab3.style.opacity= '0.5';
+
+  btntab1.querySelector('.yellow-underline').style.display = 'block';
+  btntab2.querySelector('.yellow-underline').style.display = 'none';
+  btntab3.querySelector('.yellow-underline').style.display = 'none';
+}
+
+// Função para mostrar a tab2 e ocultar tab1 e tab3
+function showTab2() {
+  tab2.classList.add('d-flex');
+  tab2.classList.remove('d-none');
+  btntab2.classList.add('fade-in');
+  btntab2.style.opacity= '1';
+
+  tab1.classList.remove('d-flex');
+  tab1.classList.add('d-none');
+  btntab1.classList.add('fade-in');
+  btntab1.style.opacity= '0.5';
+
+  tab3.classList.remove('d-flex');
+  tab3.classList.add('d-none');
+  btntab3.classList.add('fade-in');
+  btntab3.style.opacity= '0.5';
+
+  btntab1.querySelector('.yellow-underline').style.display = 'none';
+  btntab2.querySelector('.yellow-underline').style.display = 'block';
+  btntab3.querySelector('.yellow-underline').style.display = 'none';
+}
+
+// Função para mostrar a tab3 e ocultar tab1 e tab2
+function showTab3() {
+  tab3.classList.add('d-flex');
+  tab3.classList.remove('d-none');
+  btntab3.classList.add('fade-in');
+  btntab3.style.opacity= '1';
+  
+  tab1.classList.remove('d-flex');
+  tab1.classList.add('d-none');
+  btntab1.classList.add('fade-in');
+  btntab1.style.opacity= '0.5';
+  
+  tab2.classList.remove('d-flex');
+  tab2.classList.add('d-none');
+  btntab2.classList.add('fade-in');
+  btntab2.style.opacity= '0.5';
+
+  btntab1.querySelector('.yellow-underline').style.display = 'none';
+  btntab2.querySelector('.yellow-underline').style.display = 'none';
+  btntab3.querySelector('.yellow-underline').style.display = 'block';
+}
+
+// Adicionar eventos de clique aos botões
+btntab1.onclick = showTab1;
+btntab2.onclick = showTab2;
+btntab3.onclick = showTab3;

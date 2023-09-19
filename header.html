@@ -53,7 +53,7 @@
                 <div class="container nav-mob" id="navmobrepo">
                     <input type="checkbox" id="checkbox-menu" onclick="hamburguer()">
 
-                    <label for="checkbox-menu">
+                    <label for="checkbox-menu" class="labelmenu">
                         <span></span>
                         <span></span>
                     </label>
@@ -156,24 +156,77 @@
         <span id="ancoragem"></span>
     </div>
 
-    <div class="w-100" id="heroimgdesk">
+    <!-- IMAGE HERO -->
+
+    <section class="w-100" id="heroimgdesk">
         <div class="p-relative">
             <img src="images/img-teste.png" alt="">
 
             <div class="d-flex justify-center">
-                <h1 class="p-absolute text-center absolute-center color-white">GASTRONOMIA COM CONSCIÊNCIA</h1>
+                <h1 class="p-absolute text-center absolute-center text-white">GASTRONOMIA<br> COM CONSCIÊNCIA</h1>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="w-100" id="heroimgmobile">
+    <section class="w-100" id="heroimgmobile">
         <div class="p-relative">
             <img src="images/img-teste-desk.png" alt="" >
             <div class="d-flex justify-center">
-                <h1 class="p-absolute text-center absolute-center color-white">GASTRONOMIA COM CONSCIÊNCIA</h1>
+                <h1 class="p-absolute text-center absolute-center text-white">GASTRONOMIA<br> COM CONSCIÊNCIA</h1>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- FIM IMAGE HERO -->
+
+    <section class="d-flex justify-center align-center flex-column p-section bg-03" id="section-tabs">
+        <div class="w-50">
+            <div class="d-flex justify-between">
+                <button class="fonte-serifada tab" id="btntab1">
+                    compre online<span class="yellow-underline"></span>
+                </button>
+                <button class="fonte-serifada tab" style="opacity: .5;" id="btntab2">
+                    encomendas<span class="yellow-underline" style="display: none;"></span>
+                </button>
+                <button class="fonte-serifada tab" style="opacity: .5;" id="btntab3">
+                    minha quitanda<span class="yellow-underline" style="display: none;"></span>
+                </button>
+            </div>
+        </div>
+        <div class="container mt-5 vh-100 d-flex align-center justify-center" id="tab1">
+            <div class="w-50  flex-column ">
+                <img src="images/PIC_2.png" alt="" class="w-90">
+            </div>
+            <div class="w-50 d-flex flex-column justify-start h-100 ">
+                <h2 class="tab-title">IPSUM <br><span class="fonte-serifada">sit </span> AMET <br>ELIT</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis feugiat
+                    quam at auctor.</p>
+                <a href="#" class="text-p btn-tabs">SAIBA MAIS</a>
+            </div>
+        </div>
+        <div class="container mt-5 vh-100  align-center justify-center d-none" id="tab2">
+            <div class="w-50  flex-column ">
+                <img src="images/10_FLV3_Quitanda_Shoot290120210483 1.png" alt="" class="w-90">
+            </div>
+            <div class="w-50 d-flex flex-column justify-start h-100 ">
+                <h2 class="tab-title">FLAVIO <br><span class="fonte-serifada">sit </span> AMET <br>ELIT</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis feugiat
+                    quam at auctor.</p>
+                <a href="#" class="text-p btn-tabs">SAIBA MAIS</a>
+            </div>
+        </div>
+        <div class="container mt-5 vh-100  align-center justify-center d-none" id="tab3">
+            <div class="w-50  flex-column ">
+                <img src="images/10_FLV3_Quitanda_Shoot290120210483 2.png" alt="" class="w-90">
+            </div>
+            <div class="w-50 d-flex flex-column justify-start h-100 ">
+                <h2 class="tab-title">HUGO <br><span class="fonte-serifada">sit </span> AMET <br>ELIT</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis feugiat
+                    quam at auctor.</p>
+                <a href="#" class="text-p btn-tabs">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
 
 
 
