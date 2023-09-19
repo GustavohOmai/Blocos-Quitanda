@@ -6,7 +6,6 @@
 
 body {
     font-size: 62.5%;
-    font-style: italic;
 }
 
 :root {
@@ -29,6 +28,7 @@ header {
     position: fixed;
     width: 100%;
     margin-top: 40px;
+    font-style: italic;
 }
 
 .text-white {
@@ -90,6 +90,7 @@ nav ul li a {
 }
 
 .logo-absolute {
+    z-index: 999999;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -100,6 +101,7 @@ nav ul li a {
     position: fixed;
     top: 55px;
     left: 50%;
+    z-index: 999999;
     transform: translateX(-50%);
 }
 
@@ -159,8 +161,14 @@ nav ul li a {
 .justify-announ{
     justify-content: space-between;
 }
-#imgdesk{
+#heroimgdesk{
     display: none;
+}
+#heroimgdesk img{
+    width: 100%;
+}
+#heroimgmobile img{
+    width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -202,10 +210,10 @@ nav ul li a {
         position: absolute;
         bottom: 20%;
     }    
-    #imgmobile{
+    #heroimgmobile{
         display: none;
     }
-    #imgdesk{
+    #heroimgdesk{
         display: block;
     }
 }
@@ -248,8 +256,6 @@ label span:nth-child(2) {
     top: 8px;
 }
 
-
-
 #nav-mob ul {
     display: flex;
     flex-direction: column;
@@ -266,4 +272,64 @@ nav#nav-mob {
 .remove-announ{
     background: var(--bg-01);
     color: var(--text-color-02);
+}
+
+#header{
+    z-index: 999999;
+}
+
+#announcement-bar{
+    font-style: italic;
+    z-index: 999999;
+}
+
+/* FIM HEADER */
+
+.p-absolute{
+    position: absolute;
+}
+
+.absolute-center{
+    bottom: 0; 
+    left: 50%; /* Move o título para o centro horizontal */
+    transform: translateX(-50%);
+}
+
+.p-relative{
+    position: relative;
+}
+.text-center{
+    text-align: center;
+}
+
+h1{
+    font-size: 10rem;
+    padding-bottom: 5rem;
+    font-family: 'League Gothic', sans-serif;
+    text-align: center;
+}
+.w-50{
+    width: 50%;
+}
+.color-white{
+    color: var(--text-color-01);
+}
+
+@media (max-width: 1500px) {
+    h1{
+        font-size: 6rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    h1{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 4rem;
+    }
 }
