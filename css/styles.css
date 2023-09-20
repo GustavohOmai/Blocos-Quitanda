@@ -10,6 +10,10 @@ body {
     font-size: 62.5%;
 }
 
+ul{
+    list-style: none;
+}
+
 
 :root {
     --bg-01: #000;
@@ -93,6 +97,11 @@ img {
     font-size: 6rem;
 }
 
+.title-footer{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
 /* TAMANHOS */
 .w-10 {
     width: 10%;
@@ -175,7 +184,9 @@ img {
 .justify-end {
     justify-content: flex-end;
 }
-
+.flex-wrap{
+flex-wrap: wrap;
+}
 /* POSIÇÕES */
 
 .p-absolute {
@@ -202,8 +213,8 @@ img {
     margin-top: 5rem;
 }
 
-.m-imgtext{
-    margin: 5vh 0 5vh 0;
+.mb-5 {
+    margin-bottom: 5rem;
 }
 
 .p-5 {
@@ -764,3 +775,162 @@ span.Marquee3 {
 /* FIM MARQUEE */
 
 /* IMG & TEXT */
+
+.flex-imgtext{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgsectionimgtext{
+    width: 50%;
+}
+
+@media screen and (max-width:1000px) {
+    .imgandtext p{
+        display: none;
+    }
+    .title {
+        font-family: 'arial', sans-serif;
+        font-size: 1rem;
+    }
+    .flex-imgtext{
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: start;
+    }
+    .imgandtext .d-flex.justify-center {
+        width: 84vw;
+    }
+
+    .imgandtext .h-80.w-50.d-flex.align-center {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        padding: 0rem 1rem 1rem;
+        z-index: 99;
+    }
+    .imgandtext .gapsection {
+        gap: 7%;
+        position: relative;
+    }
+
+    .imgsectionimgtext{
+        width: 60vw;
+    }
+    .imgandtext .title {
+        font-family: 'arial', sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .gap7.flex-imgtext {
+        gap: 0vh;
+    }
+
+    .flex-imgtext::-webkit-scrollbar {
+        width: 0px;
+        /* Largura da barra de rolagem personalizada (pode ser ajustada) */
+    }
+
+    .flex-imgtext::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        /* Cor do polegar (tornando-o invisível) */
+    }
+
+    .flex-imgtext::-webkit-scrollbar-track {
+        background-color: transparent;
+        /* Cor da trilha (tornando-a invisível) */
+    }
+    .overlay {
+        background: #000;
+        position: absolute;
+        height: 99%;
+        opacity: .3;
+        width: 79%;
+    }
+
+}
+
+/* FIM IMG & TEXT */
+
+/* FOOTER */
+
+#footer nav ul {
+    display: flex;
+    gap: 10px;
+}
+#footer nav ul li a {
+    font-size: 1.8rem;
+}
+
+.menufooter1 {
+    gap: 5vh;
+}
+
+.sobrenos {
+    width: 50%;
+}
+
+#footer .text-p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28.8px; 
+    letter-spacing: -0.75px;
+}
+
+.mb-5{
+    margin-bottom: 5%;
+}
+
+#footer{
+    padding: 5rem 0 1.3rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.text-copyright{
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.d-none-desk{
+    display: none;
+}
+
+.d-none-only-mobile{
+    display: block;
+}
+.d-none-only-mobile-flex{
+    display: flex;
+}
+
+@media screen and (max-width:767px) {
+    .text-copyright{
+        font-size: .7rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+
+    #footer .justify-between {
+        justify-content: center;
+    }
+
+    .logofooter img{
+        width: 15vw;
+    }
+
+    .gaphorariomobile{
+        gap: 15px;
+        margin: 7vh 0;
+    }
+    .d-none-desk{
+        display: flex;
+    }
+    .d-none-only-mobile{
+        display: none;
+    }
+    .d-none-only-mobile-flex{
+        display: none;
+    }
+}
+
