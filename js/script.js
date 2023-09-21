@@ -60,57 +60,7 @@ function verificarPosicaoElemento() {
     }
 }
 
-// Menu Burguer
 
-let checkbox = document.getElementById('checkbox-menu')
-let menu = document.getElementById('nav-mob')
-
-function hamburguer() {
-  let posicao = ancoragem.getBoundingClientRect();
-  if (checkbox.checked) {
-    menu.classList.remove('d-none-menu-mobile')
-    menumobile.style.marginTop= '-40px';
-    disableScroll();
-    elemento.classList.add('elemento-no-topo');
-    elemento.classList.remove('logo-absolute');
-    navmobrepo.style.marginTop= '5rem';
-  } else {
-    if (posicao.top > 180) {
-      menu.classList.add('d-none-menu-mobile')
-      navmobrepo.style.marginTop= '2.5rem';
-      menumobile.style.marginTop= '0px';
-      enableScroll();
-      elemento.classList.remove('elemento-no-topo');
-      elemento.classList.add('logo-absolute');
-    }else{
-      menu.classList.add('d-none-menu-mobile')
-      navmobrepo.style.marginTop= '2.5rem';
-      menumobile.style.marginTop= '0px';
-      enableScroll();
-      elemento.classList.add('elemento-no-topo');
-      elemento.classList.remove('logo-absolute');
-      
-    }
-   
-  }
-}
-
-function disableScroll() {
-  var scrollX = window.scrollX || document.documentElement.scrollLeft;
-  var scrollY = window.scrollY || document.documentElement.scrollTop;
-  document.styleSheets[0].insertRule("::-webkit-scrollbar { width: 0px; }", 0);
-  window.onscroll = function() {
-    window.scrollTo(scrollX, scrollY);
-    elemento.classList.add('elemento-no-topo');
-  };
-}
-
-function enableScroll() {
-  window.onscroll = null;
-  document.styleSheets[0].deleteRule(0);
-  elemento.classList.add('elemento-no-topo');
-}
-// FIM Menu Burguer
 
 // TABS
 
@@ -184,3 +134,55 @@ function showTab3() {
 btntab1.onclick = showTab1;
 btntab2.onclick = showTab2;
 btntab3.onclick = showTab3;
+
+// Menu Burguer
+
+let checkbox = document.getElementById('checkbox-menu')
+let menu = document.getElementById('nav-mob')
+
+function hamburguer() {
+  let posicao = ancoragem.getBoundingClientRect();
+  if (checkbox.checked) {
+    menu.classList.remove('d-none-menu-mobile')
+    menumobile.style.marginTop= '-40px';
+    disableScroll();
+    elemento.classList.add('elemento-no-topo');
+    elemento.classList.remove('logo-absolute');
+    navmobrepo.style.marginTop= '5rem';
+  } else {
+    if (posicao.top > 180) {
+      menu.classList.add('d-none-menu-mobile')
+      navmobrepo.style.marginTop= '2.5rem';
+      menumobile.style.marginTop= '0px';
+      enableScroll();
+      elemento.classList.remove('elemento-no-topo');
+      elemento.classList.add('logo-absolute');
+    }else{
+      menu.classList.add('d-none-menu-mobile')
+      navmobrepo.style.marginTop= '2.5rem';
+      menumobile.style.marginTop= '0px';
+      enableScroll();
+      elemento.classList.add('elemento-no-topo');
+      elemento.classList.remove('logo-absolute');
+      
+    }
+   
+  }
+}
+
+function disableScroll() {
+  var scrollX = window.scrollX || document.documentElement.scrollLeft;
+  var scrollY = window.scrollY || document.documentElement.scrollTop;
+  document.styleSheets[0].insertRule("::-webkit-scrollbar { width: 0px; }", 0);
+  window.onscroll = function() {
+    window.scrollTo(scrollX, scrollY);
+    elemento.classList.add('elemento-no-topo');
+  };
+}
+
+function enableScroll() {
+  window.onscroll = null;
+  document.styleSheets[0].deleteRule(0);
+  elemento.classList.add('elemento-no-topo');
+}
+// FIM Menu Burguer

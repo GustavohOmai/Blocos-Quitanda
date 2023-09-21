@@ -81,6 +81,9 @@ img {
 .text-center {
     text-align: center;
 }
+.text-start {
+    text-align: start;
+}
 
 .fonte-serifada {
     font-style: italic;
@@ -198,6 +201,10 @@ flex-wrap: wrap;
     left: 50%;
     /* Move o título para o centro horizontal */
     transform: translateX(-50%);
+}
+.absolute-start{
+    bottom: 0;
+    left: 5%;
 }
 
 .p-relative {
@@ -934,3 +941,30 @@ span.Marquee3 {
     }
 }
 
+/* Página Institucional */
+
+.overlay-institucional{
+        background: #000;
+        position: absolute;
+        height: 100%;
+        opacity: .3;
+        width: 100%;
+}
+
+.title-institucional{
+    font-size: 7rem;
+    padding-bottom: 5rem;
+    font-family: 'League Gothic', sans-serif;
+}
+
+@media screen and (max-width:767px){
+    .title-institucional {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+        font-family: 'League Gothic', sans-serif;
+    }
+}
+
+.mt-header{
+    margin-top: 130px;
+}
