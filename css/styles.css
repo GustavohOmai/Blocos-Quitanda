@@ -968,3 +968,46 @@ span.Marquee3 {
 .mt-header{
     margin-top: 130px;
 }
+
+/* Pagina de Conteudo */
+
+.card{
+    width: 27%;
+}
+
+.title-card{
+    font-size: 2.3rem;
+    font-family: 'League Gothic', sans-serif;
+    color: var(--text-color-02);
+    margin: 30px 0;
+}
+
+.text-card {
+    font-size: 1rem;
+    color: var(--text-color-02);
+}
+
+.title-receitas{
+    padding-top: 3rem;
+    font-size: 4rem;
+    font-family: 'League Gothic', sans-serif;
+    color: var(--text-color-02);
+    border-top: 3px solid var(--text-color-02);
+}
+
+@media screen and ( max-width:767px) {
+    .overflow-receitas{
+        overflow: scroll;
+        gap: 50px;
+    }
+    .card {
+        min-width: 50vw;
+    }
+    .title-receitas{
+        padding-top: 3rem;
+        font-size: 3rem;
+        font-family: 'League Gothic', sans-serif;
+        color: var(--text-color-02);
+        border-top: 3px solid var(--text-color-02);
+    }
+}
