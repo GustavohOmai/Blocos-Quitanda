@@ -141,7 +141,7 @@ let checkbox = document.getElementById('checkbox-menu')
 let menu = document.getElementById('nav-mob')
 
 function hamburguer() {
-  let posicao = ancoragem.getBoundingClientRect();
+    let posicao = ancoragem.getBoundingClientRect();
   if (checkbox.checked) {
     menu.classList.remove('d-none-menu-mobile')
     menumobile.style.marginTop= '-40px';
