@@ -1010,4 +1010,19 @@ span.Marquee3 {
         color: var(--text-color-02);
         border-top: 3px solid var(--text-color-02);
     }
+
+    .overflow-receitas::-webkit-scrollbar {
+        width: 0px;
+        /* Largura da barra de rolagem personalizada (pode ser ajustada) */
+    }
+
+    .overflow-receitas::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        /* Cor do polegar (tornando-o invisível) */
+    }
+
+    .overflow-receitas::-webkit-scrollbar-track {
+        background-color: transparent;
+        /* Cor da trilha (tornando-a invisível) */
+    }
 }
