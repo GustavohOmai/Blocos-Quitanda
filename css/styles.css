@@ -348,7 +348,7 @@ nav ul li a {
     width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     nav ul li a {
         font-size: 1.1rem;
     }
