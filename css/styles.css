@@ -400,6 +400,12 @@ nav ul li a {
         display: block;
     }
 }
+
+@media (max-width: 350px){
+    nav ul li a {
+        font-size: 1.8rem;
+    }
+}
 .labelmenu {
     cursor: pointer;
     position: relative;
