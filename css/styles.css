@@ -347,7 +347,7 @@ nav ul li a {
 #heroimgmobile img {
     width: 100%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .menu-desktop {
         display: none;
     }
