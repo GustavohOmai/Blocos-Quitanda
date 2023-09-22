@@ -565,8 +565,9 @@ h1 {
         display: grid;
         grid-template-columns: repeat(3, 55vw);
         grid-template-rows: 1fr;
-        overflow: scroll;
-        scroll-snap-type: both mandatory;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
         gap: 50px;
     }
 
@@ -831,7 +832,8 @@ span.Marquee3 {
     }
     .flex-imgtext{
         flex-direction: row;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
         justify-content: start;
     }
     .imgandtext .d-flex.justify-center {
