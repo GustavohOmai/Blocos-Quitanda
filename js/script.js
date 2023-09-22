@@ -3,7 +3,7 @@
 const logo = document.getElementById('logosvg');
 const header = document.getElementById('header');
 const announ = document.getElementById('announcement-bar');
-const sizex = window.innerHeight / 2.45;
+const sizex = window.innerHeight / 2.5;
 const elemento = document.getElementById('logo');
 const ancoragem = document.getElementById('ancoragem');
 const menumobile = document.getElementById('menu-mobile');
