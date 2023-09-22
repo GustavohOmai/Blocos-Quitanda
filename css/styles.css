@@ -347,6 +347,12 @@ nav ul li a {
 #heroimgmobile img {
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+}
 @media (max-width: 1024px) {
     .menu-desktop {
         display: none;
