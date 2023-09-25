@@ -48,7 +48,7 @@ function verificarPosicaoElemento() {
         announ.style.opacity = '1';
         const scrollTop = window.scrollY;
 
-        const initialSize = windowHeight / 2.4;
+        const initialSize = window.innerHeight / 2.5;
         const newSize = initialSize - (scrollTop * 0.4);
         const finalSize = newSize;
 
