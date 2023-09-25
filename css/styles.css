@@ -471,7 +471,7 @@ nav#nav-mob {
 /* HERO IMAGE */
 
 h1 {
-    font-size: 10rem;
+    font-size: 11rem;
     padding-bottom: 5rem;
     font-family: 'League Gothic', sans-serif;
     text-align: center;
@@ -640,7 +640,7 @@ h1 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: var(--text-color-03);
+    color: var(--text-color-02);
     font-style: italic;
 }
 @media screen and (min-width: 767px) {
@@ -733,8 +733,8 @@ h1 {
     }
 
     .h2-marquee {
-        font-size: 35px;
-        margin-top: 70px;
+        font-size: 33px;
+        margin-top: 75px;
         height: 119px;
     }
 
@@ -750,8 +750,8 @@ h1 {
     }
 
     .h2-marquee {
-        font-size: 22px;
-        margin-top: 79px;
+        font-size: 21px;
+        margin-top: 80px;
         height: 110px;
     }
 
