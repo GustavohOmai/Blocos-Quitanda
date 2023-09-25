@@ -1231,3 +1231,10 @@ span.Marquee3 {
     transition: .3s;
     z-index: 2;
 }
+
+.plyr--video .plyr__control:focus-visible, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background: #FF5C39!important;
+    background: var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    color: #fff;
+    color: var(--plyr-video-control-color-hover,#fff);
+}
