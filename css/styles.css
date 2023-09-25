@@ -1238,3 +1238,8 @@ span.Marquee3 {
     color: #fff;
     color: var(--plyr-video-control-color-hover,#fff);
 }
+
+.plyr__poster {
+    background-size: cover!important;
+ 
+}
