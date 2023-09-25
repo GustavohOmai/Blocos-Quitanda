@@ -95,6 +95,10 @@ img {
     background: var(--bg-04);
 }
 
+.bg-half{
+    background: linear-gradient(180deg, rgba(240,238,228,1) 0%, rgba(240,238,228,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
 
 /* TEXTOS */
 
@@ -1157,4 +1161,73 @@ span.Marquee3 {
         background-color: transparent;
         /* Cor da trilha (tornando-a invisível) */
     }
+}
+
+/* VIDEO PLAYER */
+
+.plyr {
+    max-width: 80%!important;
+}
+
+.plyr__control:focus-visible {
+    outline: 2px dashed #FF5C39!important;
+    outline: 2px dashed var(--plyr-focus-visible-color,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+}
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
+    background: #FF5C39;
+    background: var(--plyr-control-toggle-checked-background,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important
+}
+.plyr--full-ui input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #0000;
+    border: 0;
+    border-radius: 26px;
+    border-radius: calc(var(--plyr-range-thumb-height,13px)*2);
+    color: #FF5C39!important;
+    color: var(--plyr-range-fill-background,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    display: block;
+    height: 19px;
+    height: calc(var(--plyr-range-thumb-active-shadow-width,3px)*2 + var(--plyr-range-thumb-height,13px));
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    transition: box-shadow .3s ease;
+    width: 100%
+}
+.plyr--full-ui input[type=range]:focus-visible::-webkit-slider-runnable-track {
+    outline: 2px dashed #FF5C39!important;
+    outline: 2px dashed var(--plyr-focus-visible-color,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    outline-offset: 2px
+}
+
+.plyr--full-ui input[type=range]:focus-visible::-moz-range-track {
+    outline: 2px dashed #FF5C39!important;
+    outline: 2px dashed var(--plyr-focus-visible-color,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    outline-offset: 2px
+}
+
+.plyr--full-ui input[type=range]:focus-visible::-ms-track {
+    outline: 2px dashed #FF5C39!important;
+    outline: 2px dashed var(--plyr-focus-visible-color,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    outline-offset: 2px
+}
+
+.plyr__control--overlaid {
+    background: #FF5C39!important;
+    background: var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
+    border: 0;
+    border-radius: 100%;
+    color: #fff;
+    color: var(--plyr-video-control-color,#fff);
+    display: none;
+    left: 50%;
+    opacity: .9;
+    padding: 15px;
+    padding: calc(var(--plyr-control-spacing,10px)*1.5);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: .3s;
+    z-index: 2;
 }

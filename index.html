@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 
 <body>
@@ -363,6 +364,16 @@
 
     <!-- FIM MARQUEE -->
 
+
+    <!-- VIDEO -->
+    <section class="bg-half">
+        <div class="d-flex justify-center">
+                <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+                    <source src="images/videoquitanda.mp4" type="video/mp4" />
+                </video>
+        </div>
+    </section>
+
     <!-- IMG & TEXT -->
 
     <section class="d-flex  align-center  gap7 mt-5 mb-5 flex-imgtext">
@@ -640,7 +651,14 @@
         </div>
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
     <script src="./js/script.js"></script>
+
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+    const player = new Plyr('#player');
+    </script>
 </body>
 
 </html>
