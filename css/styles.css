@@ -1298,3 +1298,28 @@ span.Marquee3 {
     height: 80vh;
     margin-right: 10%;
 }
+
+#textandimg1{
+    background-image: url(../images/img-8748.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+#textandimg2{
+    background-image: url(../images/12-2022-06-quitanda0974-green-min.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+#textandimg3{
+    background-image: url(../images/9-2022-06-quitanda0917-green-min.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
