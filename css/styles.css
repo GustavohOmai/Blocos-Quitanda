@@ -1366,3 +1366,38 @@ span.Marquee3 {
         height: 35vh;
     }
 }
+.title-conteudo {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 4.5rem;
+}
+
+#texto2{
+    width: 45%;
+}
+@media screen and (max-width: 1000px) {
+    #texto2{
+        width: 100%;
+    }
+}
+
+#texto1{
+    width: 45%;
+}
+@media screen and (max-width: 1000px) {
+    #texto1{
+        width: 100%;
+    }
+    .title-conteudo {
+        font-family: 'League Gothic', sans-serif;
+        font-size: 2.5rem;
+    }
+    
+}
+
+#flex-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
