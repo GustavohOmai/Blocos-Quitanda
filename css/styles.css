@@ -1191,6 +1191,10 @@ span.Marquee3 {
     max-width: 80%!important;
 }
 
+.plyr--video {
+    height: 80vh!important;
+}
+
 .plyr__control:focus-visible {
     outline: 2px dashed #FF5C39!important;
     outline: 2px dashed var(--plyr-focus-visible-color,var(--plyr-color-main,var(--plyr-color-main,#FF5C39)))!important;
