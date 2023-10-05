@@ -41,6 +41,15 @@ ul {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/Leagu-Gothic-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body::-webkit-scrollbar {
     width: 7px;
 }
@@ -130,7 +139,7 @@ img {
 
 .title {
     font-family: 'League Gothic', sans-serif;
-    font-size: 6rem;
+    font-size: 4.5rem;
 }
 
 .title-footer {
@@ -303,7 +312,7 @@ nav li {
 }
 
 nav ul li a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .yellow-underline {
@@ -349,7 +358,7 @@ nav ul li a {
 }
 
 .announcement-bar p {
-    font-size: 1rem;
+    font-size: .7rem;
 }
 
 .fade-in {
@@ -512,12 +521,14 @@ nav#nav-mob {
 
 #header {
     z-index: 999999;
+    text-transform: capitalize;
 }
 
 #announcement-bar {
-    font-family: 'Kepler Std Light', sans-serif;
+    font-family: 'Agipo Mono Regular', sans-serif;
     font-style: italic;
     z-index: 999999;
+    text-transform: uppercase;
 }
 
 /* FIM HEADER */
@@ -568,13 +579,23 @@ h1 {
 /* TABS */
 
 .tab {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     display: inline-block;
     width: max-content;
+    text-transform: capitalize;
 }
 
+
+@media screen and (max-width: 1500px) {
+    .tab {
+        font-size: 2rem;
+    }
+}
+
+
+
 .tab-title {
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: 'League Gothic', sans-serif;
 }
 
@@ -705,7 +726,7 @@ h1 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: var(--text-color-02);
+    color: var(--text-color-03);
     font-style: italic;
 }
 
@@ -797,7 +818,7 @@ h1 {
 }
 
 .marquee-wrapper {
-    height: 130px;
+    height: 86px;
     letter-spacing: 1px;
     font-family: 'Kepler Std Light', sans-serif;
 
@@ -806,19 +827,19 @@ h1 {
 
 @media screen and (min-width: 767px) {
     .h1-marquee {
-        font-size: 60px;
+        font-size: 40px;
         margin-top: 50px;
     }
 
     .h2-marquee {
-        font-size: 33px;
-        margin-top: 75px;
+        font-size: 20px;
+        margin-top: 86px;
         height: 119px;
     }
 
     .h3-marquee {
-        font-size: 25px;
-        margin-top: 89px;
+        font-size: 16px;
+        margin-top: 49px;
     }
 }
 
@@ -996,6 +1017,7 @@ span.Marquee3 {
 
 #footer nav ul li a {
     font-size: 1.8rem;
+    text-transform: capitalize;
 }
 
 .menufooter1 {
@@ -1242,4 +1264,33 @@ span.Marquee3 {
 .plyr__poster {
     background-size: cover!important;
  
+}
+
+
+#tab1img{
+    background-image: url(../images/gab-quitanda-14.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 80vh;
+    margin-right: 10%;
+}
+#tab2img{
+    background-image: url(../images/pic-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 80vh;
+    margin-right: 10%;
+}
+#tab3img{
+    background-image: url(../images/10_FLV3_Quitanda_Shoot290120210483-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 80vh;
+    margin-right: 10%;
 }
