@@ -999,7 +999,7 @@ span.Marquee3 {
     .overlay {
         background: #000;
         position: absolute;
-        height: 99%;
+        height: 100%;
         opacity: .3;
         width: 79%;
     }
@@ -1333,4 +1333,36 @@ span.Marquee3 {
     height: 100%;
     opacity: .3;
     width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+    .plyr--video {
+        height: auto!important;
+    }
+
+
+    #textandimg1{
+        background-image: url(../images/img-8748.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 35vh;
+    }
+    #textandimg2{
+        background-image: url(../images/12-2022-06-quitanda0974-green-min.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 35vh;
+    }
+    #textandimg3{
+        background-image: url(../images/9-2022-06-quitanda0917-green-min.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 35vh;
+    }
 }
