@@ -526,7 +526,6 @@ nav#nav-mob {
 
 #announcement-bar {
     font-family: 'Agipo Mono Regular', sans-serif;
-    font-style: italic;
     z-index: 999999;
     text-transform: uppercase;
 }
@@ -536,7 +535,7 @@ nav#nav-mob {
 /* HERO IMAGE */
 
 h1 {
-    font-size: 11rem;
+    font-size: 8rem;
     padding-bottom: 5rem;
     font-family: 'League Gothic', sans-serif;
     text-align: center;
@@ -595,8 +594,9 @@ h1 {
 
 
 .tab-title {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'League Gothic', sans-serif;
+    line-height: 6rem;
 }
 
 .tab-title .fonte-serifada {
@@ -618,6 +618,12 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
+    
+    .tab-title {
+        font-size: 5rem;
+        font-family: 'League Gothic', sans-serif;
+        line-height: 5rem;
+    }
     #tab1 {
         flex-wrap: wrap;
     }
@@ -710,6 +716,8 @@ h1 {
     button#btntab3 {
         padding-right: 20vw;
     }
+
+    
 
 }
 
@@ -931,6 +939,7 @@ span.Marquee3 {
 
 .imgsectionimgtext {
     width: 50%;
+    min-height: 70vh;
 }
 
 @media screen and (max-width:1000px) {
@@ -1001,7 +1010,7 @@ span.Marquee3 {
         position: absolute;
         height: 100%;
         opacity: .3;
-        width: 79%;
+        width: 100%;
     }
 
 }
@@ -1400,4 +1409,26 @@ span.Marquee3 {
     gap: 50px;
 }
 
+@media screen and (max-width:1200px) {
+    #tab1img {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    #tab2img {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    #tab3img {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .imgsectionimgtext {
+        width: 100%;
+        min-height: 50vh;
+    }
+}
 
