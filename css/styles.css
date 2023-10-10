@@ -1437,3 +1437,7 @@ span.Marquee3 {
     }
 }
 
+p.text-black.d-none-mobile {
+    position: absolute;
+    right: 35%;
+}
