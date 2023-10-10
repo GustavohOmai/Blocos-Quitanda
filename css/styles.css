@@ -587,7 +587,11 @@ h1 {
 
 @media screen and (max-width: 1500px) {
     .tab {
-        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .text-p {
+        font-size: 1rem;
     }
 }
 
