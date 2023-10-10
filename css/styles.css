@@ -429,7 +429,7 @@ nav ul li a {
     }
 
     nav ul li a {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 
     .d-none-mobile {
@@ -461,7 +461,7 @@ nav ul li a {
 
 @media (max-width: 400px) {
     nav ul li a {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 
