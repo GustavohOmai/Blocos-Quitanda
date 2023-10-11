@@ -5,15 +5,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 62.5%;
+    
 }
 
 ul {
     list-style: none;
 }
-
 
 :root {
     --bg-01: #000;
