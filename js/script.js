@@ -130,10 +130,16 @@ function showTab3() {
   btntab3.querySelector('.yellow-underline').style.display = 'block';
 }
 
-// Adicionar eventos de clique aos botões
-btntab1.onclick = showTab1;
-btntab2.onclick = showTab2;
-btntab3.onclick = showTab3;
+window.onload = function () {
+
+  // Adicionar eventos de clique aos botões
+  btntab1.onclick = showTab1;
+  btntab2.onclick = showTab2;
+  btntab3.onclick = showTab3;
+  
+}
+
+
 
 // Menu Burguer
 
