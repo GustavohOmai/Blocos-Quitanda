@@ -876,8 +876,8 @@ h1 {
 
 @media screen and (max-width: 767px) {
     .h1-marquee {
-        font-size: 40px;
-        margin-top: 36px;
+        font-size: 20px;
+        margin-top: 77px;
     }
 
     .h2-marquee {
@@ -887,8 +887,8 @@ h1 {
     }
 
     .h3-marquee {
-        font-size: 16px;
-        margin-top: 66px;
+        font-size: 20px;
+        margin-top: 60px;
     }
 
 }
