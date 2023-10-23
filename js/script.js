@@ -19,6 +19,7 @@ const tab3 = document.getElementById('tab3');
 // ONLOAD
 
 window.onload = function () {
+  console.log("oi");
   let posicao = ancoragem.getBoundingClientRect();
   console.log(posicao);
     logo.style.width = `${sizex}px`;
@@ -27,6 +28,11 @@ window.onload = function () {
       header.style.opacity = '0';
       announ.style.opacity = '0';
     }
+
+  // Adicionar eventos de clique aos botões
+  btntab1.onclick = showTab1;
+  btntab2.onclick = showTab2;
+  btntab3.onclick = showTab3;
 }
 
 // HEADER
@@ -130,14 +136,9 @@ function showTab3() {
   btntab3.querySelector('.yellow-underline').style.display = 'block';
 }
 
-window.onload = function () {
 
-  // Adicionar eventos de clique aos botões
-  btntab1.onclick = showTab1;
-  btntab2.onclick = showTab2;
-  btntab3.onclick = showTab3;
-  
-}
+
+ 
 
 
 
@@ -192,20 +193,3 @@ function enableScroll() {
   elemento.classList.add('elemento-no-topo');
 }
 // FIM Menu Burguer
-
-
-// ScrollSmooth
-
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
