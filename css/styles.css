@@ -138,17 +138,21 @@ img {
 .text-p {
     font-size: 1.2rem;
     font-family: 'Agipo Mono Regular', monospace;
+    line-height: 28.8px;
+    letter-spacing: 0.75px;
 }
 
 .title {
     font-family: 'League Gothic', sans-serif;
     font-size: 3.5rem;
+    font-weight: 200;
 }
 
 .title-footer {
     font-family: 'League Gothic', sans-serif;
     font-size: 3.5rem;
     margin-bottom: 30px;
+    font-weight: 200;
 }
 
 /* TAMANHOS */
@@ -603,7 +607,8 @@ h1 {
 .tab-title {
     font-size: 6rem;
     font-family: 'League Gothic', sans-serif;
-    line-height: 6rem;
+    line-height: 5rem;
+    font-weight: 200;
 }
 
 .tab-title .fonte-serifada {
@@ -630,6 +635,7 @@ h1 {
         font-size: 5rem;
         font-family: 'League Gothic', sans-serif;
         line-height: 5rem;
+        font-weight: 200;
     }
     #tab1 {
         flex-wrap: wrap;
@@ -706,7 +712,7 @@ h1 {
 
     .tab-title {
         font-size: 4rem;
-        line-height: 4rem;
+        line-height: 3rem;
     }
 
     .text-p {
@@ -1128,6 +1134,7 @@ span.Marquee3 {
     font-size: 7rem;
     padding-bottom: 5rem;
     font-family: 'League Gothic', sans-serif;
+    font-weight: 200;
 }
 
 @media screen and (max-width:767px) {
@@ -1135,6 +1142,7 @@ span.Marquee3 {
         font-size: 4rem;
         padding-bottom: 2rem;
         font-family: 'League Gothic', sans-serif;
+        font-weight: 200;
     }
 }
 
@@ -1151,6 +1159,7 @@ span.Marquee3 {
 .title-card {
     font-size: 2.3rem;
     font-family: 'League Gothic', sans-serif;
+    font-weight: 200;
     color: var(--text-color-02);
     margin: 30px 0;
 }
@@ -1164,6 +1173,7 @@ span.Marquee3 {
     padding-top: 3rem;
     font-size: 4rem;
     font-family: 'League Gothic', sans-serif;
+    font-weight: 200;
     color: var(--text-color-02);
     border-top: 3px solid var(--text-color-02);
 }
@@ -1184,6 +1194,7 @@ span.Marquee3 {
         font-family: 'League Gothic', sans-serif;
         color: var(--text-color-02);
         border-top: 3px solid var(--text-color-02);
+        font-weight: 200;
     }
 
     .overflow-receitas::-webkit-scrollbar {
@@ -1386,6 +1397,7 @@ span.Marquee3 {
 .title-conteudo {
     font-family: 'League Gothic', sans-serif;
     font-size: 4.5rem;
+    font-weight: 200;
 }
 
 #texto2{
@@ -1407,6 +1419,7 @@ span.Marquee3 {
     .title-conteudo {
         font-family: 'League Gothic', sans-serif;
         font-size: 2.5rem;
+        font-weight: 200;
     }
     
 }
@@ -1454,4 +1467,8 @@ p.text-black.d-none-mobile {
         width: 100%;
        text-align: center;
     }
+}
+
+h1{
+    font-weight: 200;
 }
