@@ -1481,3 +1481,22 @@ p.text-black.d-none-mobile {
 h1{
     font-weight: 200;
 }
+
+.btn-outline {
+    color: #000;
+    background: transparent;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:1000px) {
+    .btn-outline {
+
+        font-size: 14px;
+    }
+
+    .btn-tabs {
+        font-size: 14px;
+    }
+}
