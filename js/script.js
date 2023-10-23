@@ -30,11 +30,11 @@ window.onload = function () {
     }
 
   // Adicionar eventos de clique aos botões
-  btntab1.onclick = showTab1;
-  btntab2.onclick = showTab2;
-  btntab3.onclick = showTab3;
+ 
 }
-
+btntab1.onclick = showTab1;
+// btntab2.onclick = showTab2;
+btntab3.onclick = showTab3;
 // HEADER
 
 window.addEventListener('scroll', verificarPosicaoElemento);
