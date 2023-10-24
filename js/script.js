@@ -77,10 +77,10 @@ function showTab1() {
   btntab1.classList.add('fade-in');
   btntab1.style.opacity= '1';
   
-  tab2.classList.remove('d-flex');
-  tab2.classList.add('d-none');
-  btntab2.classList.add('fade-in');
-  btntab2.style.opacity= '0.5';
+  // tab2.classList.remove('d-flex');
+  // tab2.classList.add('d-none');
+  // btntab2.classList.add('fade-in');
+  // btntab2.style.opacity= '0.5';
   
   tab3.classList.remove('d-flex');
   tab3.classList.add('d-none');
@@ -126,10 +126,10 @@ function showTab3() {
   btntab1.classList.add('fade-in');
   btntab1.style.opacity= '0.5';
   
-  tab2.classList.remove('d-flex');
-  tab2.classList.add('d-none');
-  btntab2.classList.add('fade-in');
-  btntab2.style.opacity= '0.5';
+  // tab2.classList.remove('d-flex');
+  // tab2.classList.add('d-none');
+  // btntab2.classList.add('fade-in');
+  // btntab2.style.opacity= '0.5';
 
   btntab1.querySelector('.yellow-underline').style.display = 'none';
   btntab2.querySelector('.yellow-underline').style.display = 'none';
