@@ -137,8 +137,8 @@ function showTab3() {
 
 // Menu Burguer
 
-let checkbox = document.getElementById('checkbox-menu')
-let menu = document.getElementById('nav-mob')
+const checkbox = document.getElementById('checkbox-menu')
+const menu = document.getElementById('nav-mob')
 
 function hamburguer() {
     let posicao = ancoragem.getBoundingClientRect();
